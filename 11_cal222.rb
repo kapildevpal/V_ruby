@@ -11,10 +11,12 @@ class Sum
        p "press 5 to exit!!"
        p "press 6 to recalcualte"
        @@option= gets.to_i
+       $obj.cal
        if @@option==5
         p "Exit"
        elsif @@option==6
          $obj.input
+         
 
        end
     end
@@ -22,18 +24,22 @@ class Sum
        if @@option ==1
         sum=@@first_num+@@sec_num
         p "addition #{sum}"
+       # $obj.input
        elsif 
         @@option==2
         sub=@@first_num-@@sec_num
         p "subtraction #{sub}"
+       # $obj.input
         elsif
            @@option==3
            div=@@first_num/@@sec_num
            p "Division #{div}"
-          elsif 
+          # $obj.input
+        elsif 
             @@option==4
             mul=@@first_num*@@sec_num
-            p "multiplication #{mul}"
+            p "Multiplication #{mul}"
+        #    $obj.input
             
     
             end
@@ -43,6 +49,6 @@ class Sum
 
   $obj= Sum.new
   $obj.input
-  $obj.cal
+  #$obj.cal
 
   
