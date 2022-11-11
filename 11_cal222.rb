@@ -21,7 +21,7 @@ class Sum
        def cal
        if @@option ==1
         sum=@@first_num+@@sec_num
-        p "multiplication #{sum}"
+        p "addition #{sum}"
        elsif 
         @@option==2
         sub=@@first_num-@@sec_num
